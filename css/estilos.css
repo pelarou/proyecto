@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+    background-color:rgb(183, 237, 233) ;
+}
+.header{
+    height: 100vh;
+    background-image: url(https://fondosmil.com/fondo/2956.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.header2{
+    background-color: #034389;
+}
+.seccionEncabezado{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorLogo{
+    width: 45%;
+    display: inline-block;
+    
+   
+}
+.navegacion{
+    display: flex;
+    width: 45%;
+    
+}
+
+.logo{
+    height: 15vh;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+.listaDesordenada{
+   
+    float: right;
+}
+.listaNav{
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 0px;
+}
+.listaNav:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.anclaNav {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 1vh;
+    
+    
+}
+
+
+.contenedorTituloHeader{
+    width: 50%;
+    margin: 0 auto;
+    height: 30vh;
+    margin-top: 200px;
+    text-align: center;
+    backdrop-filter: blur(3px);
+}
+.contenedorTituloHeader h1{
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+}
+.contenedorTituloHeader p {
+    font-size: 1.5rem;
+
+}
+
+.main{
+    background-color: rgb(183, 237, 233);
+    color: black;
+}
+
+.seccionTarjeta {
+    display: flex;
+    width: 100%;
+    
+    justify-content: center;
+    
+}
+
+.contenedorTotal{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin: 3%;
+    
+    
+    
+   
+    
+}
+.contenedorTextoTarjeta{
+    
+    width: 35%;
+    background-color: white;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blanchedalmond;
+    border:2px solid black;
+    border-right: none;
+    
+}
+
+.contenedorTextoTarjeta hr{
+    width: 75%;
+    border: 2px solid black;
+}
+
+
+
+.contenedorImg{
+    
+   width: 40%;
+   height: 45vh;
+   border:2px solid black;
+  
+   
+   
+}
+
+
+.contenedorImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.seccionDondeEstamos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75vh;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.form div{
+    margin: 5px;
+}
+
+.contenedorServicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: bisque;
+}
+.imagen{
+    width: 30%;
+    margin: 2vh;
+    padding: 4vh;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.imagen img{
+    width: 100%;
+    
+}
+.imagen h3{
+    padding-bottom: 1vh;
+}
+
+.seccionNosotros {
+    background-image: url(/assets/img/rain-2590345_1280.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorNosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50vh;
+    border: solid black;
+    backdrop-filter: blur(3px);
+}
+
+.contenedorNosotros h3{
+    padding-bottom: 18vh;
+}
+
+.contenedorNosotros p{
+    padding-bottom: 15vh;
+}
+
+
+
+
+.footer{
+    background-color: #034389;
+
+text-align: center;
+display: flex;
+flex-direction: column;
+
+
+}
+.footer p{
+    font-size: 1.2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+.linkRedes{
+    text-decoration: none;
+}
+.icon{
+    color: black;
+    font-size: 3rem;
+    margin: 1vh;
+    
+}
+
