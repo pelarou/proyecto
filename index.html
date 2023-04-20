@@ -4,71 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vidrieria De La Aguada</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
     <header class="header">
-        <section class="seccionEncabezado">
-            <div class="contenedorLogo">
-                <a href="#"><img class="logo" src="assets\img\logo-fot.png" alt="logo"></a>
-            </div>
-            <nav class="navegacion">
-                <ul class="listaDesordenada">
-                    <li class="listaNav"><a class="anclaNav" href="#">Inicio</a></li>
-                    <li class="listaNav"><a class="anclaNav" href="./pages/servicios.html">Servicios</a></li>
-                    <li class="listaNav"><a class="anclaNav" href="./pages/nosotros.html">Nosotros</a></li>
-                    <li class="listaNav"><a class="anclaNav" href="./pages/contacto.html">Contacto</a></li>
-                    <li class="listaNav"><a class="anclaNav" href="./pages/dondeEstamos.html">Donde Estamos</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section>
-            <div class="contenedorTituloHeader">
-                <h1>
-                    Vidrieria De La Aguada
-                </h1>
-                <p>Fabrica de cristales templados y laminados. </p>
-            </div>
+        <div class="container-fluid contenedorNav w-100">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent">
+                <div class="container-fluid navegador">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Vidrieria De La Aguada</a>
+                    <img src="/assets/img/logo-fot.png" class="logo" alt="logo" width="110" height="110">
 
-        </section>
+
+
+                    <div class="collapse navbar-collapse  " id="navbarNav">
+                        <ul class="navbar-nav w-100">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/pages/dondeEstamos.html">Donde Estamos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+            </nav>
+
+
+        </div>
+
+
+        <div class="container-fluid-md  textoPrincipal " >
+            <h1>
+                Vidrieria De La Aguada
+            </h1>
+            <p>Fabrica de cristales templados y laminados. </p>
+            <p> Trabajamos con todo tipo de cristales.</p>
+        </div>
+
+
+        
     </header>
     <main class="main">
 
-        <hr>
-        <section class="seccionTarjeta">
+        <hr class="hrSeparador">
 
-            <div class="contenedorTotal">
+       
+        <div class="card  tarjetaIndex" style="max-width: 720px">
+            <div class="card-bodyIndex text-center">
+                <h4 class="card-title"> Mas de 20 años en el mercado</h4>
+                
+                <h6 class="card-title">Nos especializamos en:</h6>
 
-                <div class="contenedorTextoTarjeta">
+                <p>Frente Blindex</p>
 
-                    <h2> Mas de 20 años en el mercado </h2>
-                    <hr>
+                <p>Cristales de seguridad</p>
 
+                <p>Mamparas de baño</p>
 
-                    <h4>Nos especializamos en:</h4>
-                    <p>Frente Blindex</p>
-                    <br>
-                    <p>Cristales de seguridad</p>
-                    <br>
-                    <p>Mamparas de baño</p>
-                    <br>
-                    <p>Claraboyas</p>
-                    <br>
-                    <p>Espejos</p>
+                <p>Claraboyas</p>
 
-                </div>
+                <p>Espejos</p>
 
-                <div class="contenedorImg">
-                    <img src="assets/img/imgTarjeta.jpg" alt="imgTarjeta">
-                </div>
             </div>
-
-
-        </section>
+            <img src="/assets/img/imgTarjeta.jpg" class="card-img-bottom ">
 
     </main>
     <footer class="footer">
@@ -84,6 +106,9 @@
                     class="icon fa-brands fa-facebook "></i></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

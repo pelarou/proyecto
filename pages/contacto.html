@@ -6,58 +6,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vidrieria De La Aguada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/estilos.css">
 </head>
 
 <body>
     <header class="header2">
-        <section class="seccionEncabezado">
-            <div class="contenedorLogo">
-                <a href="#"><img class="logo" src="/assets\img\logo-fot.png" alt="logo"></a>
-            </div>
-            <nav class="navegacion">
-                <ul class="listaDesordenada">
-                    <li class="listaNav"><a class="anclaNav" href="../index.html">Inicio</a></li>
-                    <li class="listaNav"><a class="anclaNav" href="/pages/servicios.html">Servicios</a></li>
-                    <li class="listaNav"><a class="anclaNav" href="/pages/nosotros.html">Nosotros</a></li>
-                    <li class="listaNav"><a class="anclaNav" href="#">Contacto</a></li>
-                    <li class="listaNav"><a class="anclaNav" href="/pages/dondeEstamos.html">Donde Estamos</a></li>
-                </ul>
-            </nav>
-        </section>
+        <div class="container-fluid contenedorNav w-100">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent">
+                <div class="container-fluid navegador">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Vidrieria De La Aguada</a>
+                    <img src="/assets/img/logo-fot.png" class="logo" alt="logo" width="110" height="110">
 
+
+
+                    <div class="collapse navbar-collapse  " id="navbarNav">
+                        <ul class="navbar-nav w-100">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/pages/dondeEstamos.html">Donde Estamos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+            </nav>
+
+
+        </div>
     </header>
-    <main class="main">
+    <main class="main contacto">
 
         <hr>
-        <div class="contenedorContacto">
 
-            <h2>Formulario de Contacto</h2>
-            <form class="form">
 
-                <div>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+        <section class="mb-5">
+
+
+            <h2 class="h1-responsive  text-center my-4">Contactanos</h2>
+
+            <p class="text-center w-responsive mx-auto mb-5">Ofrecemos un servicio garantido, avalado por nuestros más
+                de 20 años en el rubro.
+                Responderemos cualquier consulta con la mayor celeridad posible. </p>
+
+            <div class="row">
+
+
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+
+                        <div class="row">
+
+
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="name" class="">Nombre</label>
+                                    <input type="text" id="name" name="name" class="form-control">
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <label for="email" class="">Email</label>
+                                    <input type="text" id="email" name="email" class="form-control">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <label for="subject" class="">Asunto</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+
+
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <label for="message">Mensaje</label>
+                                    <textarea type="text" id="message" name="message" rows="2"
+                                        class="form-control md-textarea"></textarea>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary btnContacto ">Enviar</a>
+                    </div>
+                    <div class="status"></div>
                 </div>
-                <div>
-                    <input type="text" id="telefono" name="telefono" placeholder="Telefono">
+
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Montevideo, Uruguay</p>
+                        </li>
+
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>2924 8580</p>
+                        </li>
+
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>lavidrieria@adinet.com.uy</p>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <input type="text" id="mail" name="mail" placeholder="Mail">
-
-                </div>
 
 
+            </div>
 
-                <textarea id="subject" name="subject" placeholder="Mensaje" style="height:200px"></textarea>
+        </section>
 
-                <input type="submit" value="Submit">
-
-
-
-            </form>
-        </div>
     </main>
+
     <footer class="footer">
         <hr>
         <p>Todos los derechos reservados© - Ivan Romero Cravea</p>
@@ -71,6 +172,9 @@
                     class="icon fa-brands fa-facebook "></i></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

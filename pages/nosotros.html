@@ -6,27 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vidrieria De La Aguada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/acaf011dda.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/estilos.css">
 </head>
 
 <body>
     <header class="header2">
-        <section class="seccionEncabezado">
-            <div class="contenedorLogo">
-                <a href="#"><img class="logo" src="/assets\img\logo-fot.png" alt="logo"></a>
-            </div>
-            <nav class="navegacion">
-                <ul class="listaDesordenada">
-                    <li class="listaNav"><a class="anclaNav" href="../index.html">Inicio</a></li>
-                    <li class="listaNav"><a class="anclaNav" href="/pages/servicios.html">Servicios</a></li>
-                    <li class="listaNav"><a class="anclaNav" href="#">Nosotros</a></li>
-                    <li class="listaNav"><a class="anclaNav" href="/pages/contacto.html">Contacto</a></li>
-                    <li class="listaNav"><a class="anclaNav" href="/pages/dondeEstamos.html">Donde Estamos</a></li>
-                </ul>
-            </nav>
-        </section>
+        <div class="container-fluid contenedorNav w-100">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent">
+                <div class="container-fluid navegador">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Vidrieria De La Aguada</a>
+                    <img src="/assets/img/logo-fot.png" class="logo" alt="logo" width="110" height="110">
 
+
+
+                    <div class="collapse navbar-collapse  " id="navbarNav">
+                        <ul class="navbar-nav w-100">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/pages/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="/pages/dondeEstamos.html">Donde Estamos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+            </nav>
+
+
+        </div>
     </header>
     <main class="main">
 
@@ -61,6 +87,7 @@
                     class="icon fa-brands fa-facebook "></i></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
