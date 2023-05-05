@@ -93,11 +93,7 @@ body {
     background-color: #034389;
 }
 
-.seccionEncabezado {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+
 
 
 .main {
@@ -200,6 +196,7 @@ hr{
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

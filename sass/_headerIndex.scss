@@ -1,0 +1,111 @@
+.header {
+    height: 100vh;
+    background-image: url(https://fondosmil.com/fondo/2956.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+.contenedorNav {
+    display: $flex;
+    flex-direction: $column;
+}
+
+.container-fluid.navegador {
+
+    font-size:map-get($fuentes, normal)
+}
+
+.navbar-brand {
+    font-size: map-get($fuentes, normal)
+}
+
+
+
+
+
+
+.navbar-nav {
+    justify-content: flex-end;
+
+
+}
+
+.nav-item:hover {
+
+    transform: scale(1.1);
+    transition: 0.2s;
+
+
+}
+
+.container-fluid-md.textoPrincipal {
+    display: $flex;
+    text-align: $center;
+    flex-direction: $column;
+    height: fit-content;
+    margin-top: 20vh;
+    backdrop-filter: blur(3px);
+    
+    p {
+        margin: 0.5rem;
+        font-size: map-get($fuentes, normal);
+    
+    }
+
+    h1 {
+        font-size: map-get($fuentes, tituloPrincipal);
+    }
+
+
+
+
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+@media only screen and (max-width: 490px) {
+
+    .container-fluid-md.textoPrincipal {
+        display: $flex;
+        text-align: $center;
+        flex-direction: $column;
+        height: fit-content;
+        margin-top: 20vh;
+        backdrop-filter: blur(3px);
+        
+        p {
+            margin: 0.5rem;
+            font-size: map-get($fuentes, chica);
+        
+        }
+    
+        h1 {
+            font-size: map-get($fuentes, normal);
+        }
+    
+    
+    
+    
+    }
+
+    .nav-link{
+        padding: 2px;
+        font-size:map-get($fuentes, chica);
+    }
+
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+    .navbar-brand{
+        font-size: map-get($fuentes, chica);
+    }
+
+}
