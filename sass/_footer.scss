@@ -1,0 +1,27 @@
+.footer {
+    
+    width: $max;
+    background-color: #034389;
+    text-align: $center;
+    display: $flex;
+    flex-direction: $column;
+    p {
+        font-size: 1.2rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+
+}
+
+
+.linkRedes {
+    text-decoration: none;
+}
+
+.icon {
+    color: black;
+    font-size: 3rem;
+    margin: 1vh;
+
+}

@@ -1,0 +1,53 @@
+.tarjetaIndex {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+
+
+    h4 {
+        font-size: map-get($fuentes, normal);
+    }
+
+    h6 {
+        font-size: 1.3rem;
+    }
+
+    p {
+
+        padding: 0px;
+        margin: 0.4rem;
+
+
+    }
+
+    img {
+        border: map-get($borde, bordeDefault);
+        border-top: none;
+        height: $max;
+    }
+
+    div {
+
+        @include flex-direction-alignItems (column, center);
+        padding: 0px;
+        margin: 0px;
+        background-color: $colorPrincipalCards;
+        border: map-get($borde, bordeDefault);
+
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+    .tarjetaIndex {
+
+        width: 90vw;
+        
+
+        img {
+
+            object-fit:$cover;
+            height: 266px;
+        }
+    }
+}
