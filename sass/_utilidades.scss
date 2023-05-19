@@ -9,7 +9,62 @@ hr{
 
 .btn {
 
-    
+    background: #034389;
+    box-shadow: 0 0 0 0 #034389;
+    animation: pulsar 2s infinite; 
     background-color: #034389;
     padding: 10px 30px;
+}
+
+@keyframes pulsar {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(52, 172, 224, 0.7);
+    }
+    
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
+    }
+    
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+    }
+  }
+
+@keyframes aparecer { 
+    0% {
+      opacity: 0;
+      
+    }
+  
+    100% {
+      opacity: 1;
+      
+    }
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes deslizar {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
 }

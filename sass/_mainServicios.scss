@@ -2,28 +2,89 @@
     display: $flex;
     flex-wrap: wrap;
     justify-content: $center;
-    background-color: $colorPrincipalbody;
+
+    margin-top: 3vh;
 }
 
 .imagen {
     width: 33vw;
-    margin: 2vh;
+    margin: 3vh;
     padding: 2vh;
-    background-color: $colorPrincipalCards;
-    object-fit: $cover;
 
-    border: map-get($borde, bordeDefault);
+
+    background: rgb(255, 255, 255,0.65);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(237, 237, 237, 0.791);
     
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    object-fit: $cover;
+    transition: transform 0.5s;
+    
+    
+
+
+
+
+
     @include flex-direction-alignItems-justify (column, center, center);
 
     img {
-        width: $max;
-    
+        width: 100%;
+
     }
 
     h4 {
         padding-bottom: 1vh;
+        color: black;
+        font-size: 1.3rem;
     }
+}
+
+.imagen:hover {
+    transform: scale(1.1);
+}
+
+
+.card1 {
+    opacity: 0;
+    animation: aparecer 5s;
+    animation-fill-mode: forwards;
+}
+
+.card2 {
+    opacity: 0;
+    animation: aparecer 5s;
+    animation-delay: 150ms;
+    animation-fill-mode: forwards;
+}
+
+.card3 {
+    opacity: 0;
+    animation: aparecer 5s;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+}
+
+.card4 {
+    opacity: 0;
+    animation: aparecer 5s;
+    animation-delay: 450ms;
+    animation-fill-mode: forwards;
+}
+
+.card5 {
+    opacity: 0;
+    animation: aparecer 5s;
+    animation-delay: 600ms;
+    animation-fill-mode: forwards;
+}
+
+.card6 {
+    opacity: 0;
+    animation: aparecer 5s ;
+    animation-delay: 750ms;
+    animation-fill-mode: forwards;
+    
 }
 
 
@@ -32,19 +93,14 @@
 
 
 @media only screen and (max-width: 992px) {
-    .contenedorServicios{
-       
-        @include flex-direction-alignItems-justify (column, center,center)
+    .contenedorServicios {
 
-
-
+        @include flex-direction-alignItems-justify (column, center, center)
     }
 
     .imagen {
 
         width: 90vw;
     }
-    
+
 }
-
-

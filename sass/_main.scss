@@ -1,6 +1,47 @@
 .main {
-    background-color: $colorPrincipalbody;
+    overflow-x: hidden;
+    width: 100vw;
     display: $flex;
     justify-content: $center;
-    
+
+
+    background-image: url(../assets/img/backgroundMain.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    -webkit-animation: slidein 100s infinite;
+    animation: slidein 100s infinite;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+
 }
